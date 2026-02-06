@@ -29,8 +29,8 @@ public class EventListFragment extends Fragment {
         eventList = new ArrayList<>();
         //eventList.add(new Event("Final de League of Legends", "2024-11-02"));
 
-        eventAdapter = new EventAdapter(eventList);
-        recyclerView.setAdapter(eventAdapter);
+        eventAdapterRV = new EventAdapter(eventList);
+        recyclerView.setAdapter(eventAdapterRV);
 
         return view;
     }

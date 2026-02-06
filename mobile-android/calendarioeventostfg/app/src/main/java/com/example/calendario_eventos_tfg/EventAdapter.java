@@ -11,7 +11,6 @@ import java.util.List;
 public class EventAdapter extends RecyclerView.Adapter<EventAdapter.EventViewHolder> {
 
     private List<Event> eventList;
-
     public EventAdapter(List<Event> eventList) {
         this.eventList = eventList;
     }
@@ -35,18 +34,18 @@ public class EventAdapter extends RecyclerView.Adapter<EventAdapter.EventViewHol
     }
 
     class EventViewHolder extends RecyclerView.ViewHolder {
-        TextView nameTextView;
-        TextView dateTextView;
+        TextView nameTV;
+        TextView dateTV;
 
         public EventViewHolder(@NonNull View itemView) {
             super(itemView);
-            nameTextView = itemView.findViewById(R.id.text_view_event_name);
-            dateTextView = itemView.findViewById(R.id.text_view_event_date);
+            nameTV = itemView.findViewById(R.id.tv_event_name);
+            dateTV = itemView.findViewById(R.id.tv_event_date);
         }
 
         public void bind(Event event) {
-            nameTextView.setText(event.getName());
-            dateTextView.setText(event.getDate());
+            nameTV.setText(event.getName());
+            dateTV.setText(event.getDate());
         }
     }
 }

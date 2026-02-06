@@ -10,7 +10,7 @@ Aplicación multiplataforma para gestionar eventos competitivos de videojuegos (
 - **Objetivo**: centralizar eventos competitivos y notificar al usuario.
 - **Tecnologías**: Django + Django REST Framework (backend), React Native, Android Material 3 (móvil), PandaScore API (datos), Figma (prototipo).
 
----
+--- 
 
 ## 2. Público objetivo
 
